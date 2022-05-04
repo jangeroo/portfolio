@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import styled from "styled-components";
+
+import "./css-reset.css";
+import "./GlobalStyles.css";
+
+import AboutMe from "./AboutMe";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 function App() {
+  useEffect(() => {
+    document.title = "Michael Jang's portfolio";
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper className="App">
+      <Header>
+        <h1>Welcome To Michael Jang's Portfolio!</h1>
+      </Header>
+      <AboutMe />
+      <Projects />
+      <Contact />
+    </AppWrapper>
   );
 }
+
+const AppWrapper = styled.div`
+  /* text-align: center; */
+  color: var(--color-text);
+`;
+
+const Header = styled.header`
+  padding: 25px;
+  padding-bottom: 10px;
+  background-color: dimgray;
+  color: gainsboro;
+`;
 
 export default App;

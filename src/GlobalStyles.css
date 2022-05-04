@@ -1,0 +1,34 @@
+
+* {
+  /* --neu-primary: rgb(50,200,220,0.5);
+  --neu-highlight: rgb(256, 256, 256, 0.5);
+  --neu-shadow: rgb(50, 200, 220, 0.5);
+  --color-text: navy */
+  --color-primary: lightgrey;
+  --neu-highlight: white;
+  --neu-shadow: black;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family:'Helvetica', sans-serif;
+}
+
+.neu {
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  /* border: 2px solid black */
+}
+
+.up {
+  box-shadow:
+    -5px -5px 10px 1px var(--neu-highlight),
+    5px 5px 10px 1px var(--neu-shadow);
+}
+
+.down {
+  box-shadow:
+    -5px -5px 5px 1px var(--neu-highlight) inset,
+    5px 5px 10px 1px var(--neu-shadow) inset;
+}
