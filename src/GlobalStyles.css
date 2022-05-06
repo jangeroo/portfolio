@@ -16,7 +16,8 @@ body {
 
 code {
   background-color: gainsboro;
-  padding: 0 3px
+  padding: 0 3px;
+  font-size: .85em;
 }
 
 .neu {
