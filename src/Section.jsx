@@ -11,12 +11,15 @@ export default function Section({ title, children }) {
 }
 
 const SectionWrapper = styled.div`
+  isolation: isolate;
   width: 75%;
   margin: 50px auto;
   padding: 25px;
+
+  border-radius: 5px;
+
   background-color: gainsboro;
   color: #404040;
-  isolation: isolate;
 `;
 
 const Title = styled.h2`

@@ -24,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Michael Jang's Portfolio</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,4 +40,27 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        document.getElementById("header").style.fontSize = ".6em";
+        document.getElementById("header").style.padding = "3px";
+        document.getElementById("header").style.paddingTop = "5px";
+        document.getElementById("header").style.textAlign = "center";
+      } else {
+        // document.getElementById("header").style.textAlign = "left";
+        document.getElementById("header").style.fontSize = "1em";
+        document.getElementById("header").style.padding = "25px";
+        document.getElementById("header").style.paddingBottom = "10px";
+      }
+    }
+  </script>
 </html>

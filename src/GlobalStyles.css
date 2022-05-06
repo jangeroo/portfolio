@@ -14,6 +14,11 @@ body {
   font-family:'Helvetica', sans-serif;
 }
 
+code {
+  background-color: gainsboro;
+  padding: 0 3px
+}
+
 .neu {
   border-radius: 10px;
   margin: 20px;

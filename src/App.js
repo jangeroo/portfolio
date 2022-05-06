@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import styled from "styled-components";
 
 import "./css-reset.css";
@@ -9,13 +8,9 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 
 function App() {
-  useEffect(() => {
-    document.title = "Michael Jang's portfolio";
-  }, []);
-
   return (
     <AppWrapper className="App">
-      <Header>
+      <Header id="header">
         <h1>Welcome To Michael Jang's Portfolio!</h1>
       </Header>
       <AboutMe />
@@ -26,7 +21,6 @@ function App() {
 }
 
 const AppWrapper = styled.div`
-  /* text-align: center; */
   color: var(--color-text);
 `;
 
@@ -38,6 +32,7 @@ const Header = styled.header`
   background-color: dimgray;
   color: gainsboro;
   z-index: 1;
+  transition: 0.5s;
 `;
 
 export default App;
