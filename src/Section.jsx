@@ -16,6 +16,7 @@ const SectionWrapper = styled.div`
   padding: 25px;
   background-color: gainsboro;
   color: #404040;
+  isolation: isolate;
 `;
 
 const Title = styled.h2`
@@ -27,6 +28,6 @@ const Title = styled.h2`
   background: darkgray;
 `;
 
-const Content = styled.p`
+const Content = styled.div`
   padding: 15px;
 `;

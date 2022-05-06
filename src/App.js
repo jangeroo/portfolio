@@ -31,10 +31,13 @@ const AppWrapper = styled.div`
 `;
 
 const Header = styled.header`
+  position: sticky;
+  top: 0px;
   padding: 25px;
   padding-bottom: 10px;
   background-color: dimgray;
   color: gainsboro;
+  z-index: 1;
 `;
 
 export default App;

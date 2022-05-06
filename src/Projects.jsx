@@ -7,8 +7,8 @@ export default function Projects() {
   return (
     <Section title="Projects">
       <ProjectList>
-        {projects.map((project) => {
-          return <Project {...project} />;
+        {projects.map((project, i) => {
+          return <Project key={i} {...project} />;
         })}
       </ProjectList>
     </Section>
@@ -32,8 +32,8 @@ function Project({ name, href, thumbnail, description }) {
         <h3>{name}</h3>
       </ProjectLink>
       <ProjectDescription>
-        {description.map((paragraph) => (
-          <p>{paragraph}</p>
+        {description.map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
         ))}
       </ProjectDescription>
     </ProjectWrapper>

@@ -11,8 +11,6 @@ export default function Contact() {
 }
 
 const ContactWrapper = styled.footer`
-  position: fixed;
-  bottom: 0px;
   width: 100%;
   padding: 25px;
   padding-bottom: 10px;
